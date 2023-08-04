@@ -64,7 +64,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="home__filters">
-                    <SearchBar setManufacturer={setManufacturer} setModel={setModel} />
+                    <SearchBar setManufacturer={setManufacturer} setModel={setModel} setLimit={setLimit} />
 
                     <div className="home__filters__container flex gap-3">
                         <CustomFilter options={fuels} setFilter={setFuel} />
