@@ -15,7 +15,7 @@ const SearchButton = ({ otherClasses }: { otherClasses: string }) => {
     )
 }
 
-const SearchBar = ({setManufacturer,setModel}:SearchBarProps) => { 
+const SearchBar = ({setManufacturer,setModel,setLimit}:SearchBarProps) => { 
     const [searchManufacturer, setSearchManufacturer] = useState('');
     const [searchModel , setSearchModel] = useState('')
     const Router = useRouter();
@@ -25,7 +25,7 @@ const SearchBar = ({setManufacturer,setModel}:SearchBarProps) => {
         {
             return alert('Please fill in the search bar');
         }
-
+        setLimit(10);
         setModel(searchModel);
         setManufacturer(searchManufacturer);
         

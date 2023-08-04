@@ -35,6 +35,7 @@ export type CarState = CarProps[] & { message?: string };
 export interface SearchBarProps {
     setManufacturer: (manufacturer: string) => void;
     setModel: (model: string) => void;
+    setLimit: (limit: number) => void;
   }
   
 export interface FilterProps{
